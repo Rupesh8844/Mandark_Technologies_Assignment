@@ -18,8 +18,12 @@ public class Problem5 {
 		//calling the function
 		boolean ans = isPerfect(number);
 		
-		System.out.println(ans);
-		
+		//printing the result
+		if(ans) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
 
 	}
 	

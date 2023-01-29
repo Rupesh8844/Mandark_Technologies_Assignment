@@ -92,7 +92,7 @@ public class Problem2 {
 		
 		String line = "";  
 		
-		System.out.println("Entries in managers.csv file -");
+		System.out.println("Entries in manager.csv file -");
 		BufferedReader br;
 		try {
 			br = new BufferedReader(new FileReader(file1));

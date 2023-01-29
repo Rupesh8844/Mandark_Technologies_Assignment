@@ -92,7 +92,7 @@ public class Problem2 {
 		
 		String line = "";  
 		
-		System.out.println("Entries in managers.csv file -");
+		System.out.println("Entries in manager.csv file -");
 		BufferedReader br;
 		try {
 			br = new BufferedReader(new FileReader(file1));
@@ -109,11 +109,7 @@ public class Problem2 {
 			e.printStackTrace();
 		}  
 		
-		
-		
 		System.out.println(" ");
-		
-		
 		
 		String line2="";
 		System.out.println("Entries in single_name_employees.csv file -");
@@ -130,6 +126,7 @@ public class Problem2 {
 			}
 			
 		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}  
 		

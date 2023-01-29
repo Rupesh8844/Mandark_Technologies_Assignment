@@ -26,9 +26,9 @@ public class Problem1 {
 		}
 		
 		int a1 = findMax(a);
-		int b1 = findMax(b);
+		int a2 = findMax(b);
 		
-		return a1*b1;
+		return a1*a2;
 	}
 	
 	

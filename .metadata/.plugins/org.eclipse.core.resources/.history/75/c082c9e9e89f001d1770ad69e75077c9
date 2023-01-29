@@ -18,7 +18,9 @@ public class Problem5 {
 		//calling the function
 		boolean ans = isPerfect(number);
 		
-		System.out.println(ans);
+		
+		
+			System.out.println(ans);
 		
 
 	}

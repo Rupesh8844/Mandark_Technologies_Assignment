@@ -17,7 +17,7 @@ public class Problem3 {
 				Scanner sc = new Scanner(System.in);
 				
 				System.out.println("please enter unique strings which is combination of letter and number by separated comma like:- "
-						+ "d34,g54,d12,b87,g1,c65,g40,g5,d77  without giving extra space.");
+						+ "  d34,g54,d12,b87,g1,c65,g40,g5,d77  without giving extra space.");
 				String str = sc.nextLine();
 				
 			   String[] st = str.split(",");
@@ -37,7 +37,10 @@ public class Problem3 {
 					   System.out.print(" "+list.get(i)+'\n');
 				   }
 			   }
-			  
+			   
+			   
+			   
+//			   System.out.println();
 			   
 			   
 		//	  solution for L2
@@ -48,7 +51,7 @@ public class Problem3 {
 				   if(i != list.size()-1) {
 					   System.out.print(" "+list.get(i)+",");
 				   }else {
-					   System.out.print(" "+list.get(i)+'\n');
+					   System.out.print(" "+list.get(i));
 				   }
 			   }
 				
