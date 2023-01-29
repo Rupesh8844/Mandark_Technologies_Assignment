@@ -1,0 +1,44 @@
+package com.Mandark_Technologies.Problem2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+
+//Problem 2 - Employee Listings
+
+public class Problem2 {
+
+	public static void main(String[] args) {
+		
+		try {
+			Scanner sc = new Scanner(new File("C:\\Users\\Rupesh\\Desktop\\Mandark Technologies\\Mandark_Technologies_Assignment\\src\\com\\Mandark_Technologies\\Problem2.csv"));
+			
+			File file1  = new File("C:\\Users\\Rupesh\\Desktop\\Mandark Technologies\\Mandark_Technologies_Assignment\\src\\com\\Mandark_Technologies\\managers.csv");
+			File file2  = new File("C:\\Users\\Rupesh\\Desktop\\Mandark Technologies\\Mandark_Technologies_Assignment\\src\\com\\Mandark_Technologies\\single_name_employees.csv");
+			
+			
+					try {
+						if(file1.exists()) {
+							System.out.println("Sorry file1 is already exists...");
+						}
+						
+						if(file2.exists()) {
+							System.out.println("Sorry file2 is already exists...");
+						}
+						
+						
+						file1.
+						
+						
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -32,7 +32,6 @@ public class Problem5 {
 		
 		long sum=0;
 		
-		//running loop till number/2 and checking the mod of number with index
 		for(int i=1; i<= number/2; i++) {
 			if(number%i == 0) {
 				sum+=i;
