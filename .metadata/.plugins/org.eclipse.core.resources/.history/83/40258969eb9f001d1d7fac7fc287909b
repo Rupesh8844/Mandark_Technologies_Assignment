@@ -19,6 +19,7 @@ public class Problem5 {
 		boolean ans = isPerfect(number);
 		
 		System.out.println(ans);
+		
 
 	}
 	

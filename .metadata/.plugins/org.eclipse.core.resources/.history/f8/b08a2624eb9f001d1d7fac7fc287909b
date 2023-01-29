@@ -31,10 +31,9 @@ public class Problem2 {
 						}
 						
 						if(!file2.createNewFile()) {
-							System.out.println("Sorry file2 is already exists..."+'\n');
+							System.out.println("Sorry file2 is already exists...");
 						}
 						
-					
 						
 						FileOutputStream fos1 = new FileOutputStream(file1);
 						FileOutputStream fos2 = new FileOutputStream(file2);
