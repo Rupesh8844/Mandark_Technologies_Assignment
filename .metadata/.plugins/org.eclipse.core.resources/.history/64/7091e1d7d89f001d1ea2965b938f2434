@@ -1,0 +1,62 @@
+package com.Mandark_Technologies.Problem3;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		
+		List<String> list = new ArrayList<>();
+//		list.add("d34");
+//		list.add("g54");
+//		list.add("d12");
+//		list.add("b87");
+//		list.add("g1");
+//		list.add("c65");
+//		list.add("g40");
+//		list.add("g5");
+//		list.add("d77");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("please enter unique strings which is combination of letter and number: ");
+		while(sc.next() == "\n") {
+			list.add(sc.nextLine());
+		}
+
+//		solution for L1 where I am just comparing the first  char of all string"
+	   Collections.sort(list,(str1,str2)-> str1.charAt(0) - str2.charAt(0));
+	   
+	   System.out.print("L1 :");
+	   for(int i=0;i<list.size();i++) {
+		   if(i != list.size()-1) {
+			   System.out.print(" "+list.get(i)+",");
+		   }else {
+			   System.out.print(" "+list.get(i));
+		   }
+	   }
+	   
+	   
+	   
+	   System.out.println();
+	   
+	   
+//	  solution for L2
+	   Collections.sort(list,new MyComp());
+	   
+	   System.out.print("L2 :");	   
+	   for(int i=0;i<list.size();i++) {
+		   if(i != list.size()-1) {
+			   System.out.print(" "+list.get(i)+",");
+		   }else {
+			   System.out.print(" "+list.get(i));
+		   }
+	   }
+		
+	}
+
+}

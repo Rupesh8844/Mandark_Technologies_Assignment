@@ -1,0 +1,62 @@
+package com.Mandark_Technologies;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.TreeSet;
+
+class MyComparator implements Comparator<String> {
+
+
+    @Override
+    public int compare(String o1, String o2) {
+
+        // Remove the chars you are want to ignore from o1, o2 
+        o1 = o1.substring(1);
+        o2 = o2.substring(1);
+        return Integer.compare(Integer.parseInt(o1),Integer.parseInt(o2));
+    }
+}
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		
+		List<String> list = new ArrayList<>();
+		list.add("d34");
+		list.add("g54");
+		list.add("d12");
+		list.add("b87");
+		list.add("g1");
+		list.add("c65");
+		list.add("g40");
+		list.add("g5");
+		list.add("d77");
+
+	   Collections.sort(list,(str1,str2)-> str1.charAt(0) - str2.charAt(0));
+	   
+	   TreeSet<String> set = new TreeSet<>();
+	   
+	   System.out.print("L1 :");
+	   
+	   for(int i=0;i<list.size();i++) {
+		   if(i != list.size()-1) {
+			   System.out.print(" "+list.get(i)+",");
+		   }else {
+			   System.out.print(" "+list.get(i));
+		   }
+	   }
+	   
+	   System.out.println();
+	   
+	   
+	   System.out.println("L2 :");
+		
+	   
+	   Collections.sort(list,new MyComparator());
+	   System.out.println(list);
+		
+	}
+
+}
